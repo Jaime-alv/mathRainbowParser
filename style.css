@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #999999;
+    background-color: #b6d7a8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@ header {
 }
 
 main {
-    background-color: #b6d7a8;
+    background-color: #999999;
     flex: auto;
 }
 
