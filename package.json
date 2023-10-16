@@ -11,7 +11,7 @@
     "TypeScript"
   ],
   "author": "Jaime Alvarez <jaime.af.git@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/Jaime-alv/mathRainbowParser"
   },
