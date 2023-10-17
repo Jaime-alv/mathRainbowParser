@@ -1,4 +1,4 @@
-import { add, multiply, subtract } from "../src/typescript/service/operations";
+import { add, divide, multiply, subtract } from "../src/typescript/service/operations";
 
 describe("Add numbers", () => {
     test("Should add two numbers together, 1 + 1 = 2", () => {
@@ -33,5 +33,24 @@ describe("Multiply two numbers", () => {
     });
     test("Should work with floating numbers", () => {
         expect(multiply(1.1, 2)).toBe(2.2);
+    });
+});
+
+describe("Divide two items", () => {
+    test("Should divide two natural numbers", () => {
+        expect(divide(4, 2)).toBe(2);
+    });
+    test("Should work with negative numbers", () => {
+        expect(divide(4, -2)).toBe(-2);
+    });
+    test("Should work with floating numbers", () => {
+        expect(divide(3, 1.5)).toBe(2);
+    });
+    test("Should work for periodic numbers", () => {
+        expect(divide(2, 1.5)).toBe(1.3333333333);
+    });
+    test("Should render up to 10 decimals", () => {
+        const periodicNumberDivision: number = divide(2, 1.5).toString().split(".")[1].length;
+        expect(periodicNumberDivision).toBe(10);
     });
 });
