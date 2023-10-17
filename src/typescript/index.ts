@@ -1,2 +1,2 @@
-let message: string = "Hello world";
+export let message: string = "Hello world";
 console.log(message)
