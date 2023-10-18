@@ -49,3 +49,66 @@ footer {
     padding: 10px;
     text-align: right;
 }
+
+.calc-container {
+    border: 3px solid;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.display,
+.numbers {
+    border-radius: 10px;
+    margin: 10px;
+    align-self: center;
+    width: 300px;
+}
+
+.display,
+table.digits td {
+    min-height: 40px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    flex: auto;
+}
+
+.display {
+    border: 3px solid black;
+}
+
+table.digits {
+    margin: 0px;
+    padding: 0px;
+    flex: auto;
+    border: 1px solid;
+    /* border-radius: 10px; */
+}
+
+table.digits td {
+    display: flex;
+    gap: 10px;
+    border: 1px solid;
+}
+
+td button:hover {
+    background-color: aqua;
+}
+
+td button {
+    /* height: fit-content; */
+    /* width: max-content; */
+    flex: auto;
+    margin: 0px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.double {
+    flex-grow: 2;
+}
