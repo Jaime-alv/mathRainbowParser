@@ -56,20 +56,20 @@ footer {
     height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 }
 
 .display,
 .numbers {
+    flex: auto;
     border-radius: 10px;
     margin: 10px;
     align-self: center;
-    width: 300px;
+    width: 370px;
 }
 
 .display,
-table.digits td {
-    min-height: 40px;
+td button {
+    min-height: 70px;
 }
 
 .numbers {
@@ -80,20 +80,22 @@ table.digits td {
 
 .display {
     border: 3px solid black;
+    background-color: gainsboro;
 }
 
-table.digits {
+table.digits {    
     margin: 0px;
     padding: 0px;
     flex: auto;
     border: 1px solid;
-    /* border-radius: 10px; */
+    font-family: monospace;
 }
 
 table.digits td {
     display: flex;
-    gap: 10px;
+    gap: 2px;
     border: 1px solid;
+    justify-content: space-evenly;
 }
 
 td button:hover {
@@ -101,8 +103,8 @@ td button:hover {
 }
 
 td button {
-    /* height: fit-content; */
-    /* width: max-content; */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
     flex: auto;
     margin: 0px;
     border: 0px;
@@ -110,5 +112,5 @@ td button {
 }
 
 .double {
-    flex-grow: 2;
+    flex-grow: 2.4;
 }
