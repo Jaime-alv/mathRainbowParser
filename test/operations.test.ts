@@ -1,4 +1,4 @@
-import { add, divide, multiply, subtract } from "../src/typescript/service/operations";
+import { add, divide, multiply, subtract } from "../src/service/operations";
 
 describe("Add numbers", () => {
     test("Should add two numbers together, 1 + 1 = 2", () => {

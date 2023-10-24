@@ -1,4 +1,4 @@
-import { message } from "../src/typescript"
+import { message } from "../src"
 
 describe("Initial test, should work as an example", () => {
     test("Should return a welcome message", () => {
